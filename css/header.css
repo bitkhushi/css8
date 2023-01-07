@@ -10,11 +10,11 @@
     border: 2px solid red;
     margin: 0 auto;
     max-width: 1000px;
-    min-width: 500px;
+    min-width: 200px;
 }
 
 .logo {
-
+    
     border: 2px solid green;
     float: left;
 }
@@ -49,8 +49,7 @@ nav ul li a {
 
 @media screen and (max-width:650px) {
 
-    .logo,
-    nav {
+    .logo,nav {
         width: 100%;
         text-align: center;
     }
