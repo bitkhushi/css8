@@ -1,0 +1,44 @@
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    color: white;
+}
+.staticdemo {
+    position: static;
+    top: 10px;
+}
+
+.relativedemo {
+    position: relative;
+    left: 50px;
+}
+
+.absoulte {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.parentabs {
+    position: relative;
+    background-color: aqua;
+    width: 450px;
+    height: 400px;
+}
+
+.childabs {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+}
+.fixed {
+    position: fixed;
+    right: 10px;
+     bottom: 10px; 
+}
+.stickyblock {
+    position: sticky;
+    top: 10px;
+}
