@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .background-img { 
+    background-image: url(../images/f1.png) ;
+    background-position: left bottom;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    background-attachment: scroll;
+ }  */
+
+.background-img {
+    background:aqua url("../images/nature.webp")  no-repeat center center scroll ;
+    display: flex;
+    height: 600px;
+    width: 800px;
+}
+
+.img1 img, .img2 img, .img3 img{
+
+    height: 100px;
+    width: 200px;
+    margin:30px;
+
+} 
+
+.img3 img {
+
+    top: 0;
+    left: 20px;
+}
