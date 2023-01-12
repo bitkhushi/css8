@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 10px;
+    height: 700px;
+    width: 85%;
+    border: 2px solid red; 
+    margin: 0 auto;
+}
+
+.box1 {
+    width: 81%;
+    height: 100px;
+    border:2px solid blue; 
+    margin: 0 auto;
+    position: fixed;
+}
+.data {
+    width: 70%;
+    height: 100%;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    padding: 30px;
+    
+    
+    
+}
+.data a {
+    color: black;
+    text-decoration: none;
+    margin: 9px;
+    
+}
+.logo {
+    
+    width: 30%;
+    height: 100%; 
+    float: left;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}   
+
+.box2 {
+    width: 85%;
+    height: 600px;
+    /* border:2px solid blue; */
+    margin-top: 30px; 
+    margin: 0 auto;
+   
+} 
+
+.product {
+    height: 220px;
+    width: 27%;
+    /* border: 2px solid green; */
+    float: left;
+    margin: 20px; 
+   
+}
+p i {
+    color: red;
+    position: absolute;
+    
+    
+}
+.imagecontent{
+   
+    height: 80%;
+    width: 100%;
+    margin-bottom: 2px; 
+}
+.imagecontent img {
+   
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+  
+   
+}
+.imagecontent i{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: red
+}
+
+.data1 {
+    height:20%;
+    width: 100%;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.data1 p {
+    margin-bottom: 2px;
+}
+
+ 
+button { 
+    height: 50px;
+    width: 12%;
+    background-color: rgb(94, 174, 94);
+    margin-left: 600px;
+    border-radius: 15px;
+}
+
+.para {
+    height: 1000px;
+    width: 85%;
+    margin: 0 auto;
+    border: 2px solid blue;
+
+}
