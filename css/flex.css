@@ -1,0 +1,81 @@
+.container {
+    height: 450px;
+    width: 80%;
+    background-color: aqua;
+    display: flex;
+    gap:20px 30px; 
+
+}
+
+.block1 {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    font-size: 10px;
+    color: azure;
+   
+    /* margin: 10px; */
+}
+
+.block2 {
+    height: 120px;
+    width: 100px;
+    background-color: blue;
+    color: azure;
+    font-size: 10px;
+    
+    /* margin: 10px; */
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justcenter {
+    justify-content: center;
+}
+.justspace {
+
+    justify-content: space-between;
+}
+
+.justard {
+    justify-content: space-around;
+}
+
+.justevn {
+    justify-content: space-evenly;
+}
+
+.aligncenter {
+    align-items: center;
+}
+
+.alignstart {
+    align-items: flex-start;
+}
+
+.alignend {
+    align-items: flex-end;
+}
+
+.alignconcenter {
+    align-content: center;
+}
+
+.alignconspacebetween {
+    align-content: space-between;
+}
+
+.alignconspaceard {
+    align-content: space-around;
+}
+
+.flxdir {
+    flex-direction: column;
+}
+
+
+
+
+
