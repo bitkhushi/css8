@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-top: 10px;
 }
 
 body {
@@ -10,15 +11,16 @@ body {
 }
 
 .container {
-    max-width: 1090px;
+   
+    max-width: 1200px;
     margin: 0 auto;
    
 
 }
 
-.container h1{
-    
-    margin-bottom: 25px;
+.container h2{
+    font-size: 38px;
+    margin-bottom: 35px;
 }
 
 .container p {
@@ -50,6 +52,84 @@ body {
     line-height: 24px;
 }
 
+hr {
+    
+    border: 0;
+    width: 95%;
+    background-color: rgba(0,0,0,0.2);
+    height: 1px;
+    margin:  110px auto;
+    
+}
 
+.work_data {
+    display: flex;
+    
+}
 
+.work_img {
+    width: 50%;
+}
+
+.work_img img {
+
+    width: 510px;
+    
+}
+
+.work_desc {
+    width: 50%;
+   
+}
+
+.work_desc button {
+    border: 0;
+    background-color: #F20091;
+    color: white;
+    height: 50px;
+    width: 30%;
+    padding: 10px ;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 2px;
+
+}
+
+.work_desc h3{
+    margin-bottom: 25px;
+}
+
+.work_desc p {
+    line-height: 25px;
+    margin-bottom: 35px;
+    /* gap: 0px 25px; */
+}
+.contact_data {
+    display: flex;
+}
+.contact_desc {
+    width: 50%;
+    column-gap: 55px;
+}
+.contact_img {
+    width: 50%;
+}
+
+.contact_img img {
+    width: 510px;
+}
+
+.contact_images {
+    display: flex;
+    column-gap: 100px;
+}
+
+.contact_images img {
+    width: 75px;
+}
+
+.contact_images p {
+    line-height: 25px;
+   
+}
 
