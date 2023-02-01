@@ -11,6 +11,11 @@ header {
     box-shadow:0.2px 0.2px 0.2px 0.2px grey;
     
 }
+.icon i{
+    height: 5px;
+    width: 10px;
+    top: 100px;
+}
 
 header a{
     text-decoration: none;
@@ -66,3 +71,32 @@ header nav ul li li ul {
     position: absolute;
 }
 
+@media screen and (max-width:768px){
+    nav > ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: brown;
+    }
+
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li ul,header nav ul li li ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul li a{
+        width: 100%;
+    }
+    header nav ul li ul li  > a {
+      padding-left: 40px;
+    }
+    header nav ul li ul li ul li > a {
+        padding-left: 60px;
+    }
+}
