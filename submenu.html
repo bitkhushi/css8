@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/submenu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/submenu.css">
 </head>
 <body>
     <header>
         <a href="#">LOGO</a>
-        <div class="icon">
-            <i class="fa-regular fa-square-xmark"></i> 
-        </div>
+       
 
         <nav>
-            <ul>
+            <i class="fa-solid fa-bars" onclick="togglemenu()"></i> 
+            <ul id="menu"> 
+                <i class="fa-solid fa-xmark" onclick="togglemenu()"></i>
+
                 <li><a href="#">Home</a></li>
                 <li>
-                    <a href="#">Product ></a>
+                    <a href="#">Product <i class="fa-solid fa-chevron-right"></i></a>
                     <ul>
                         <li><a href="#">Sosyo</a></li>
                         <li><a href="#">Maza</a></li>
                         <li>
-                            <a href="#">sprite ></a>
+                            <a href="#">sprite <i class="fa-solid fa-chevron-right"></i></a>
                             <ul>
                                 <li><a href="#">Cold</a></li>
                                 <li><a href="#">Normal</a></li>
@@ -34,7 +36,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Contact Us ></a>
+                    <a href="#">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
                     <ul>
                         <li><a href="#">Surat</a></li>
                         <li><a href="#">Vdodara</a></li>
@@ -47,5 +49,10 @@
             </ul>
         </nav>
     </header>
+    <script>
+        function togglemenu() {
+            document.getElementById("menu").classList.toggle('showhide')
+        }
+    </script>
 </body>
 </html>

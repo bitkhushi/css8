@@ -11,11 +11,6 @@ header {
     box-shadow:0.2px 0.2px 0.2px 0.2px grey;
     
 }
-.icon i{
-    height: 5px;
-    width: 10px;
-    top: 100px;
-}
 
 header a{
     text-decoration: none;
@@ -24,16 +19,19 @@ header a{
     display: inline-block;
     /* margin: 15px; */
     color: black;
+    transition: all 0.2s;
 }
 header nav ul li {
     display: inline-block;
     position: relative;
     list-style-type: none;
+    transition: all 0.5s;
    
 }
 
 header nav ul li a{
     display: inline-block;
+    transition: all 0.5s;
   
    
 }  
@@ -70,6 +68,12 @@ header nav ul li li ul {
     left: 103px;  
     position: absolute;
 }
+nav ul > i, nav > i {
+    display: none !important;
+}
+nav ul li a:hover i{
+    transform: rotate(90deg);
+}
 
 @media screen and (max-width:768px){
     nav > ul {
@@ -78,7 +82,9 @@ header nav ul li li ul {
         right: 0;
         width: 70%;
         height: 100vh;
-        background-color: brown;
+        background-color: rgb(179, 10, 10);
+        transition: all 1s;
+       
     }
 
     header nav ul li{
@@ -99,4 +105,25 @@ header nav ul li li ul {
     header nav ul li ul li ul li > a {
         padding-left: 60px;
     }
+    nav ul > i {
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        float: right;
+        z-index: 999;
+        position: relative;
+        display: inline-block !important;
+       
+    }
+    nav > i {
+        padding: 20px;
+        font-size: 20px;
+        display: inline-block !important;
+
+    }
+    .showhide {
+        right: -70%;
+    }
+    
+
 }
