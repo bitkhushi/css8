@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family:'Courier New', Courier, monospace;
+    padding: 20px;
+    box-shadow: 2px 1px 2px 1px grey;
+    
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+ header nav ul li:hover >   ul{
+    display: inline-block;
+    transition: all 2s;
+} 
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+header  nav ul li a:hover {
+    background-color: black;
+    color: white;
+   
+}
+
+header nav ul li ul {
+    top: 40px;
+    left: 0; 
+    position: absolute;
+    background-color: grey;
+    display: none;  
+
+   
+}
+
+header nav ul li ul li a, header nav ul li ul li{
+    display: inline-block;
+    width: 100%;
+}
+
+header nav li ul li ul li, header nav li ul li ul li a {
+    display: inline-block;
+   
+}
+header nav ul li li:hover ul {
+    display: inline-block;
+}
+
+header nav ul li li ul {
+    position: absolute;
+    top: 0;
+    left: 115px;
+    
+}
+
+
+header nav ul li a:hover i{
+    transform: rotate(90deg);
+}
+ @media screen and (max-width:768px) {
+    nav > ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(218, 49, 49);
+        transition: all 1s;
+       
+    }
+    header nav ul li {
+        display: block;
+        /* position: absolute; */
+    }
+
+    header nav ul li ul,header nav ul li li ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul li a {
+        width: 100%;
+    }
+}  
+    
+
+
+
+
+
+   
+
+
+ 
+
