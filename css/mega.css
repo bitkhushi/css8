@@ -16,7 +16,7 @@ header {
 header a{
     text-decoration: none;
     font-size: 15px;
-    padding: 20px;
+     padding: 20px; 
     display: inline-block;
     /* margin: 15px; */
     color: black;
@@ -25,7 +25,7 @@ header a{
 
 header nav ul li {
     display: inline-block;
-    position: relative;
+    position: relative; 
     list-style-type: none;
     transition: all 0.5s;
    
@@ -46,16 +46,16 @@ header nav ul li a:hover {
 }
 
 .megamenu {
-    width: 600px;
+    max-width: 600px;
     right:0 ;
-    top: 80px;
+    top: 50px;
     /* height: 400px; */
     background-color: gray;
     display: flex;
     position: absolute;
     justify-content: space-between;
     padding: 10px;
-    /* display: none;  */
+    display: none; 
 }
 .megamenu li {
     position: relative;
@@ -67,14 +67,14 @@ header nav ul li a:hover {
    
 }
 .megamenu li ul li a {
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .megamenu > li::after {
     content: '';
     width: 1px;
     background-color: #fff;
-    height: 80%;
+    height: 90%;
     position: absolute;
     top: 0;
     right: 0;
@@ -90,7 +90,32 @@ header nav ul li:hover .megamenu{
     display: block;
 }
 
-
+@media screen and (max-width:768px){
+    nav > ul {
+        top: 0;
+        right: 0;
+        min-height: 100vh; 
+        width: 70%;
+        background-color: brown;
+        position: absolute;
+        
+    }
+    header nav ul li {
+        display:block;
+    }
+    header nav .megamenu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    } 
+    header nav ul li a {
+        width: 100%;
+    }
+    .megamenu > li::after {
+        display: none;
+    }
+}
 
 
 
