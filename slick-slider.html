@@ -8,13 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/slick.css">
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/slick-slider.css">
 </head>
 
 <body>
+
     <div class="mainslider">
-    
-        
+
+
         <div class="slide">
             <img src="./images/nature.webp" alt="">
         </div>
@@ -25,14 +29,40 @@
             <img src="./images/nature.webp" alt="">
         </div>
     </div>
- 
-       
-      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 
-      <script src="./js/slick.min.js"type="text/javascript" charset="utf-8"></script>
-      <script>
-        $('.mainslider').slick();
-      </script> 
-</body>
 
-</html>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+    <script src="./js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $('.mainslider').slick({
+            autoplay: false,
+            autoplaySpeed: 1000,
+            dots: true,
+            nextArrow: '<i class="fa-solid fa-chevron-right slick-next"></i>',
+            prevArrow: '<i class="fa-solid fa-chevron-left slick-prev"></i>'
+        });
+    </script>
+    <!-- <div class="main_slider">
+
+        <div class="product">
+            <img src="./images/shampoo1.jpg" alt="">
+        </div>
+        <div class="product">
+            <img src="./images/shampoo10.jpg" alt="">
+        </div>
+        <div class="product">
+            <img src="./images//shampoo3.jpg" alt="">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+    <script src="./js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        <script>
+
+            </script> -->
+
+</body >
+
+</html >
