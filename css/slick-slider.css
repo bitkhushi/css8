@@ -78,3 +78,70 @@ body {
     height: 100vh;
     width: 100%;
 }
+
+.main_slider .product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+ .main_slider .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.main_slider i{
+    background-color: black;
+}
+
+.main_slider .slick-next:before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+} 
+
+.main_slider .slick-prev:before {
+    content: "\f053";
+    font-family: "Font Awesome 6 Free";
+}
+
+.main_slider .slick-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid black;
+    z-index: 999;
+}
+
+.main_slider .slick-dots li button:before {
+    font-size: 50px;
+    
+
+}
+.main_slider .slick-dots{
+    bottom: 0;
+
+}
+.main_slider .slick-dots li.slick-active button:before {
+    color: black;
+}
+.main_slider .slick-dots li.slick-active button:before {
+    color: black;
+}
+.slick-prev:before, .slick-next:before{
+    color: black;
+}
