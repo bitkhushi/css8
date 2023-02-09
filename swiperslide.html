@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/swiperslide.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/swiperslide.css">
     <title>Document</title>
+
 </head>
 
 <body>
@@ -26,7 +30,7 @@
             <div class="swiper-slide">
                 <img src="./images/nature.jpg" alt="">
             </div>
-            
+
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -42,8 +46,47 @@
         <!-- If we need scrollbar -->
         <!-- <div class="swiper-scrollbar"></div> -->
     </div>
+    <br><br><br>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/n2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/nature.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/n2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/nature.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/n2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/nature.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/n2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/nature.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/n2.jpg" alt="">
+            </div>
+        </div>
+        <div class="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script>
         const swiper = new Swiper('.main_slider', {
@@ -70,6 +113,41 @@
         });
 
     </script>
+    <br><br><br>
+
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper1 = new Swiper(".mySwiper ", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+
 
 </body>
 
